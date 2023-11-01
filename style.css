@@ -4,12 +4,24 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: #451952;
+}
 .header
 {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(background.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(assets/background.png);
     background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.headerSaibaMais
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
     background-size: cover;
     position: relative;
 }
@@ -109,8 +121,9 @@ nav img
 
 /*------ Course ------*/
 
-.course
+.produtos
 {
+    color: #fff;
     width: 80%;
     margin: auto;
     text-align: center;
@@ -125,7 +138,7 @@ h1
 
 p
 {
-    color: #244235;
+    color: #F39F5A;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -139,10 +152,10 @@ p
     justify-content: space-between;
 }
 
-.course-col
+.produtos-col
 {
     flex-basis: 31%;
-    background: #8da193;
+    background: #662549;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -152,27 +165,29 @@ p
 
 h3
 {
+    color: #F39F5A;
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
 
-.course-col:hover
+.produtos-col:hover
 {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 /*------ campus ------*/
 
-.campus
+.filiais
 {
+    color: #fff;
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
 
-.campus-col
+.filiais-col
 {
     flex-basis: 32%;
     border-radius: 10px;
@@ -181,7 +196,7 @@ h3
     overflow: hidden;
 }
 
-.campus-col img
+.filiais-col img
 {
     width: 100%;
 }
@@ -226,6 +241,7 @@ h3
 
 .facilities
 {
+    color: #fff;
     width: 80%;
     margin: auto;
     text-align: center;
@@ -240,12 +256,11 @@ h3
     text-align: left;
 }
 
-.facilities-col img
-{
+.facilities-col img {
     width: 100%;
-    border-radius: 10px;
+    height: 500px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Para garantir que a imagem cubra o contêiner */
 }
-
 .facilities-col p
 {
     padding: 0;
